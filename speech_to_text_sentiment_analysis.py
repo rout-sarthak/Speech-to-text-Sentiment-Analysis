@@ -16,6 +16,7 @@ try:
     print("Text to speech: "+recognizer.recognize_google(speech));
 except:
     pass;
+
 from textblob import TextBlob
 blob = TextBlob(" "+recognizer.recognize_google(speech))
 blob.sentiment 
