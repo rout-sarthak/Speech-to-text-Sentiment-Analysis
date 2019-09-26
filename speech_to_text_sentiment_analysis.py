@@ -4,7 +4,7 @@ Created on Wed Sep 25 20:49:17 2019
 
 @author: sarthak
 """
-
+#Creating a speech to text converter: 
 import speech_recognition as sr
 recognizer = sr.Recognizer()
 with sr.Microphone() as source: 
@@ -16,7 +16,7 @@ try:
     print("Text to speech: "+recognizer.recognize_google(speech));
 except:
     pass;
-
+#Using Textblob for sentiment analysis
 from textblob import TextBlob
 blob = TextBlob(" "+recognizer.recognize_google(speech))
 blob.sentiment 
